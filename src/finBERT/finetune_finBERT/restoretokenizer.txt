@@ -1,0 +1,6 @@
+python - <<'PY'
+from transformers import AutoTokenizer
+tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert")
+tokenizer.save_pretrained("./finbert_finetuned_safe_pure2")
+print("✅ Tokenizer đã được khôi phục trong finbert_finetuned_safe_pure/")
+PY

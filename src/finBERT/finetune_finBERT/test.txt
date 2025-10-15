@@ -1,0 +1,11 @@
+python - <<'PY'
+from transformers import pipeline
+clf = pipeline("text-classification", model="./finbert_finetuned_safe_pure2", tokenizer="./finbert_finetuned_safe_pure2", device=0)
+for t in [
+    "Bitcoin plunges after weak market data",
+    "Tech stocks surge after strong earnings report",
+    "Company posts record quarterly profit",
+    "Market crashes amid investor panic"
+]:
+    print(t, "=>", clf(t))
+PY
