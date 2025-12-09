@@ -1,0 +1,9 @@
+models/
+data/
+records/
+venv/
+*.docx
+*.pt
+*.npy
+__pycache__/
+results/rl_agent/ppo/ppo_trading.zip

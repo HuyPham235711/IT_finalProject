@@ -1,0 +1,23 @@
+python - <<'PY'
+from transformers import AutoModelForSequenceClassification
+from safetensors.torch import load_file
+
+# 🔹 Load weights từ file safetensors
+weights = load_file("./finbert_finetuned_safe/model.safetensors")
+
+# 🔹 Tạo model base từ FinBERT gốc
+base = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert", num_labels=3)
+
+# 🔹 Bỏ prefix "model." khỏi keys
+clean_weights = {k.replace("model.", ""): v for k, v in weights.items() if k.startswith("model.")}
+
+missing, unexpected = base.load_state_dict(clean_weights, strict=False)
+print("✅ Loaded fine-tuned weights into base model")
+print("Missing keys:", missing)
+print("Unexpected keys:", unexpected)
+
+# 🔹 Save lại model sạch để pipeline hiểu được
+base.save_pretrained("./finbert_finetuned_safe_pure2")
+
+print("✅ Saved clean model to ./finbert_finetuned_safe_pure2")
+PY

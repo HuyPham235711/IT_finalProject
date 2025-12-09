@@ -1,0 +1,27 @@
+2025-10-17 11:01:53,845 [INFO] Logger initialized. Writing to logs\train_transformer.log
+2025-10-17 11:01:53,846 [INFO] === Training Transformer Encoder (Week4 Task1) ===
+2025-10-17 11:01:55,112 [INFO] Train shape=(62881, 8), Valid shape=(2119, 8)
+2025-10-17 11:01:55,235 [INFO] Created 62821 train seq, 2059 valid seq
+2025-10-17 11:03:26,085 [INFO] Epoch 1/20 - Train Loss: 303.687245
+2025-10-17 11:04:55,426 [INFO] Epoch 2/20 - Train Loss: 274.403640
+2025-10-17 11:06:25,801 [INFO] Epoch 3/20 - Train Loss: 273.773431
+2025-10-17 11:07:56,517 [INFO] Epoch 4/20 - Train Loss: 274.253164
+2025-10-17 11:09:27,361 [INFO] Epoch 5/20 - Train Loss: 274.009883
+2025-10-17 11:10:58,159 [INFO] Epoch 6/20 - Train Loss: 273.653657
+2025-10-17 11:12:28,910 [INFO] Epoch 7/20 - Train Loss: 273.619693
+2025-10-17 11:13:59,683 [INFO] Epoch 8/20 - Train Loss: 273.904519
+2025-10-17 11:15:30,444 [INFO] Epoch 9/20 - Train Loss: 273.741299
+2025-10-17 11:17:01,181 [INFO] Epoch 10/20 - Train Loss: 273.619553
+2025-10-17 11:18:32,092 [INFO] Epoch 11/20 - Train Loss: 274.019979
+2025-10-17 11:20:03,183 [INFO] Epoch 12/20 - Train Loss: 273.777627
+2025-10-17 11:21:34,495 [INFO] Epoch 13/20 - Train Loss: 273.646358
+2025-10-17 11:23:05,813 [INFO] Epoch 14/20 - Train Loss: 273.411540
+2025-10-17 11:24:36,646 [INFO] Epoch 15/20 - Train Loss: 273.782464
+2025-10-17 11:26:07,507 [INFO] Epoch 16/20 - Train Loss: 273.808803
+2025-10-17 11:27:38,271 [INFO] Epoch 17/20 - Train Loss: 273.939972
+2025-10-17 11:29:08,949 [INFO] Epoch 18/20 - Train Loss: 273.759614
+2025-10-17 11:30:39,588 [INFO] Epoch 19/20 - Train Loss: 273.695679
+2025-10-17 11:32:10,575 [INFO] Epoch 20/20 - Train Loss: 273.561614
+2025-10-17 11:32:11,618 [INFO] Saved embeddings shape=(2059, 1536)
+2025-10-17 11:32:11,618 [INFO] [DONE] Saved model and embeddings.
+2025-10-17 11:32:11,618 [INFO] Metrics: {'MSE': 302.2283935546875, 'MAE': 14.327637672424316}

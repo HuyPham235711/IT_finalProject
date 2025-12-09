@@ -1,0 +1,11 @@
+========== 📊 METRICS SUMMARY ==========
+Accuracy        : 0.5475
+Macro Precision : 0.5772
+Macro Recall    : 0.5390
+Macro F1-score  : 0.5335
+Weighted F1     : 0.5769
+========================================
+Negative   → P=0.819  R=0.598  F1=0.691  (Support=10212.0)
+Neutral    → P=0.265  R=0.534  F1=0.355  (Support=4524.0)
+Positive   → P=0.647  R=0.485  F1=0.555  (Support=7270.0)
+========================================

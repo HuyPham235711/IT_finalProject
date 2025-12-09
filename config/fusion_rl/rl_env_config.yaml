@@ -1,0 +1,17 @@
+# Reinforcement Learning Environment Configuration
+state_dim: 256
+action_type: continuous          # continuous | discrete
+action_range: [-1.0, 1.0]
+episode_length: 256
+initial_balance: 100000.0
+transaction_cost: 0.001
+slippage_rate: 0.0005
+max_position: 1.0
+
+data:
+  prices_path: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/data/processed/prices.parquet
+  fused_state_path: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/fusion_rl/fusion_embeddings.npy
+
+reward_config_path: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/config/fusion_rl/reward_config.yaml
+log_path: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/logs/rl/rl_env_test.log
+seed: 42

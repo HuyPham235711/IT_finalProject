@@ -1,0 +1,95 @@
+project:
+  name: "week3_baselines"
+  root_dir: "E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT"
+  run_id: "auto"
+
+logging:
+  level: "INFO"
+  log_dir: "E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/logs"
+  file_name: "week3_${project.run_id}.log"
+
+postgres:
+  conn_env: "PG_CONN_STR"
+  schema: "it_final"
+  tables:
+    ohlcv_train: "processed_ohlcv_train"
+    ohlcv_valid: "processed_ohlcv_valid"
+    ohlcv_test: "processed_ohlcv_test"
+    ohlcv_backtest: "processed_ohlcv_backtest"
+
+data:
+  time_col: "datetime"
+  features: ["open", "high", "low", "close", "volume", "sma14", "rsi14"]
+  target: "close"
+  lookback: 60
+  stride: 1
+  symbol: "BTCUSD"
+
+
+lstm:
+  task: "regression_close_t_plus_1"
+  batch_size: 256
+  num_epochs: 5
+  hidden_size: 128
+  num_layers: 2
+  dropout: 0.1
+  bidirectional: false
+  optimizer: "adam"
+  lr: 0.001
+  weight_decay: 0.0
+  device: "cuda:0"
+
+lstm_advanced1:
+  data:
+    schema: it_final
+    train_table: processed_ohlcv_train
+    valid_table: processed_ohlcv_valid
+    test_table: processed_ohlcv_test
+
+  lookback: 60
+  hidden_size: 768
+  embedding_dim: 768
+  num_layers: 2
+  dropout: 0.2
+  batch_size: 32
+  lr: 0.0003        
+  device: cuda:0
+  epochs: 10
+  model_type: "att_cnn_lstm"
+
+lstm_advanced2:
+  data:
+    schema: it_final
+    train_table: processed_ohlcv_train
+    valid_table: processed_ohlcv_valid
+    test_table: processed_ohlcv_test
+
+  model_type: "transformer"
+  lookback: 60
+  embedding_dim: 768
+  num_heads: 8      
+  num_layers: 2
+  dropout: 0.2
+  batch_size: 32
+  lr: 0.0002            
+  epochs: 20
+  device: cuda:0
+
+
+evaluation:
+  metrics: ["mse", "mae"]
+  save_dir: "E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/lstm"
+  outputs:
+    model_file: "lstm_baseline.pt"
+    metrics_file: "lstm_baseline_metrics.json"
+    embeddings_file: "ohlcv_embeddings.npy"
+
+finbert:
+  results_dir: "E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/finbert"
+  outputs:
+    predictions_csv: "finbert_baseline_predictions.csv"
+    metrics_json: "finbert_baseline_metrics.json"
+    confusion_png: "confusion_matrix.png"
+
+reproducibility:
+  seed: 42

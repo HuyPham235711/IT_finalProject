@@ -1,0 +1,28 @@
+(venv) PS E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT> python -m src.finBERT.generate_daily_embeddings
+[INFO] Unique sentiment days: 122
+[INFO] OHLCV timeline hours: 3649
+[INFO] OHLCV date range: 2025-04-11 00:00:00 → 2025-09-10 00:00:00
+✅ Saved FinBERT daily embeddings aligned with OHLCV 1h (test)
+[INFO] Output path: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/finbert/sampler_v2/finbert_daily_embeddings_test.npy
+[INFO] Final shape: (3649, 3)
+[INFO] Coverage days: 122
+(venv) PS E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT> python -m src.finBERT.cut_embedd
+(3589, 3)
+(venv) PS E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT> python -m src.fusion_rl.train_fusion_mlp
+[INFO] Loading embeddings...
+[INFO] Fusion input shape: (3589, 3843)
+[INFO] Start training Fusion MLP...
+Epoch 1/100 - Loss: 0.452215
+Epoch 10/100 - Loss: 0.016865
+Epoch 20/100 - Loss: 0.002155
+Epoch 30/100 - Loss: 0.001346
+Epoch 40/100 - Loss: 0.000967
+Epoch 50/100 - Loss: 0.000634
+Epoch 60/100 - Loss: 0.000458
+Epoch 70/100 - Loss: 0.000332
+Epoch 80/100 - Loss: 0.000268
+Epoch 90/100 - Loss: 0.000173
+Epoch 100/100 - Loss: 0.000131
+✅ Saved checkpoint → E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/fusion_rl/fusion_checkpoint.pt
+✅ Saved fused embeddings → E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\fusion_rl\fusion_embeddings.npy | shape=(3589, 256)
+(venv) PS E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT>

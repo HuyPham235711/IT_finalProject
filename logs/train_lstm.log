@@ -1,0 +1,8 @@
+2025-10-16 12:36:58,500 [INFO] Logger initialized. Writing to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\logs\train_lstm.log
+2025-10-16 12:36:58,500 [INFO] === Training LSTM Baseline ===
+2025-10-16 12:37:04,155 [INFO] Epoch 1/5 - Train Loss: 0.045952
+2025-10-16 12:37:07,377 [INFO] Epoch 2/5 - Train Loss: 0.045524
+2025-10-16 12:37:10,577 [INFO] Epoch 3/5 - Train Loss: 0.045464
+2025-10-16 12:37:13,799 [INFO] Epoch 4/5 - Train Loss: 0.045501
+2025-10-16 12:37:17,086 [INFO] Epoch 5/5 - Train Loss: 0.045443
+2025-10-16 12:37:17,090 [INFO] Model saved to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm\lstm_baseline.pt

@@ -1,0 +1,39 @@
+agent:
+  algo: "DQN"
+  learning_rate: 1.0e-3
+  gamma: 0.99
+  epsilon_start: 1.0
+  epsilon_end: 0.05
+  epsilon_decay_steps: 100000
+  batch_size: 128
+  memory_size: 100000
+  target_update_every: 1000
+  num_episodes: 100
+  max_steps_per_episode: 5000
+  gradient_clip_norm: 1.0
+  seed: 42
+
+env:
+  module_path: "src/rl_env/trading_env.py"
+  class_name: "TradingEnv"
+  initial_balance: 1000.0
+
+data:
+  fusion_embeddings_path: "results/fusion_rl/train_inference/fusion_embeddings.npy"  # env sẽ tự load
+  price_table_order_by: "datetime"                                   # cột sắp xếp khi SELECT
+  price_columns: ["datetime", "close"]                               # chỉ cần 'close' cho env
+
+storage:
+  save_dir: "results/rl_agent/train_inference"
+  checkpoints_dir: "results/rl_agent/train_inference/checkpoints"
+  train_log_csv: "results/rl_agent/train_inference/train_log.csv"
+  train_log_file: "logs/train_inference/rl_agent_train.log"
+
+postgres:
+  conn_env: "PG_CONN_STR"
+  schema: "it_final"
+  tables:
+    ohlcv_train: "processed_ohlcv_train"
+    ohlcv_valid: "processed_ohlcv_valid"
+    ohlcv_test: "processed_ohlcv_test"
+    ohlcv_backtest: "processed_ohlcv_backtest"

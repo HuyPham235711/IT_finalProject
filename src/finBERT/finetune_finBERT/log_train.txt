@@ -1,0 +1,75 @@
+(modeltest_venv) datastudio@datastudio:~/huy/it/src/finBERT$ python finbert_finetune_basic.py
+[Device] Using: cuda:0
+Filtering empty texts: 100%|████████████████████████████████████████████████████| 44548/44548 [00:05<00:00, 7973.06it/s]
+Filtering empty texts: 100%|████████████████████████████████████████████████████| 21705/21705 [00:02<00:00, 7945.41it/s]
+Filtering empty texts: 100%|████████████████████████████████████████████████████| 22006/22006 [00:02<00:00, 7935.69it/s]
+[Data] Train=44,548, Valid=21,705, Test=22,006
+[Label Distribution]
+sentiment_label
+neutral     0.449829
+negative    0.285310
+positive    0.264860
+Name: proportion, dtype: float64
+/home/datastudio/huy/it/src/finBERT/finbert_finetune_basic.py:120: UserWarning: expandable_segments not supported on this platform (Triggered internally at /pytorch/c10/hip/HIPAllocatorConfig.h:29.)
+  class_weights = torch.tensor(class_weights, dtype=torch.float).to(device)
+[Train] Start full training...
+  0%|                                                                                          | 0/2788 [00:00<?, ?it/s]/home/datastudio/huy/modeltest_venv/lib/python3.10/site-packages/torch/nn/modules/linear.py:125: UserWarning: Attempting to use hipBLASLt on an unsupported architecture! Overriding blas backend to hipblas (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:310.)
+  return F.linear(input, self.weight, self.bias)
+/home/datastudio/huy/modeltest_venv/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+{'loss': 1.4523, 'grad_norm': 4.211507797241211, 'learning_rate': 1.1785714285714287e-05, 'epoch': 0.14}
+{'loss': 0.9467, 'grad_norm': 5.637156009674072, 'learning_rate': 1.9763358778625956e-05, 'epoch': 0.29}
+{'loss': 0.8563, 'grad_norm': 7.116547584533691, 'learning_rate': 1.9e-05, 'epoch': 0.43}
+{'loss': 0.8108, 'grad_norm': 4.0409417152404785, 'learning_rate': 1.8236641221374046e-05, 'epoch': 0.57}
+{'loss': 0.7801, 'grad_norm': 4.535409450531006, 'learning_rate': 1.7473282442748094e-05, 'epoch': 0.72}
+{'loss': 0.7521, 'grad_norm': 4.158697128295898, 'learning_rate': 1.670992366412214e-05, 'epoch': 0.86}
+{'eval_loss': 1.3997505903244019, 'eval_accuracy': 0.33789449435613916, 'eval_precision': 0.3438188742913613, 'eval_recall': 0.4145795153445169, 'eval_f1': 0.3335543677761747, 'eval_runtime': 258.0818, 'eval_samples_per_second': 84.101, 'eval_steps_per_second': 0.659, 'epoch': 1.0}
+ 25%|███████████████████▌                                                          | 697/2788 [31:26<1:05:37,  1.88s/it/home/datastudio/huy/modeltest_venv/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+{'loss': 0.7527, 'grad_norm': 4.281338214874268, 'learning_rate': 1.5946564885496184e-05, 'epoch': 1.0}
+{'loss': 0.6802, 'grad_norm': 4.1795973777771, 'learning_rate': 1.518320610687023e-05, 'epoch': 1.15}
+{'loss': 0.6686, 'grad_norm': 4.864809036254883, 'learning_rate': 1.4419847328244277e-05, 'epoch': 1.29}
+{'loss': 0.6649, 'grad_norm': 5.519641876220703, 'learning_rate': 1.3656488549618322e-05, 'epoch': 1.43}
+{'loss': 0.6566, 'grad_norm': 4.290096282958984, 'learning_rate': 1.2893129770992368e-05, 'epoch': 1.58}
+{'loss': 0.6464, 'grad_norm': 5.826406478881836, 'learning_rate': 1.2129770992366415e-05, 'epoch': 1.72}
+{'loss': 0.6545, 'grad_norm': 4.755332946777344, 'learning_rate': 1.1366412213740458e-05, 'epoch': 1.87}
+{'eval_loss': 1.452992558479309, 'eval_accuracy': 0.36332642248329877, 'eval_precision': 0.37290504650811435, 'eval_recall': 0.4322939257750292, 'eval_f1': 0.36317497033005397, 'eval_runtime': 256.4153, 'eval_samples_per_second': 84.648, 'eval_steps_per_second': 0.663, 'epoch': 2.0}
+ 50%|██████████████████████████████████████▌                                      | 1394/2788 [1:02:50<45:23,  1.95s/it/home/datastudio/huy/modeltest_venv/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+{'loss': 0.6392, 'grad_norm': 4.069615840911865, 'learning_rate': 1.0603053435114506e-05, 'epoch': 2.01}
+{'loss': 0.5556, 'grad_norm': 7.419485569000244, 'learning_rate': 9.839694656488551e-06, 'epoch': 2.15}
+{'loss': 0.573, 'grad_norm': 6.959767818450928, 'learning_rate': 9.076335877862596e-06, 'epoch': 2.3}
+{'loss': 0.5394, 'grad_norm': 6.137933731079102, 'learning_rate': 8.312977099236642e-06, 'epoch': 2.44}
+{'loss': 0.5453, 'grad_norm': 5.3515944480896, 'learning_rate': 7.549618320610688e-06, 'epoch': 2.58}
+{'loss': 0.5401, 'grad_norm': 7.874000549316406, 'learning_rate': 6.786259541984734e-06, 'epoch': 2.73}
+{'loss': 0.5443, 'grad_norm': 5.736647129058838, 'learning_rate': 6.0229007633587785e-06, 'epoch': 2.87}
+{'eval_loss': 1.7992196083068848, 'eval_accuracy': 0.34798433540658835, 'eval_precision': 0.35674859463453323, 'eval_recall': 0.4307114482854016, 'eval_f1': 0.3420498050225313, 'eval_runtime': 258.5538, 'eval_samples_per_second': 83.948, 'eval_steps_per_second': 0.658, 'epoch': 3.0}
+ 75%|█████████████████████████████████████████████████████████▊                   | 2091/2788 [1:34:23<22:44,  1.96s/it/home/datastudio/huy/modeltest_venv/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+{'loss': 0.5336, 'grad_norm': 6.010202407836914, 'learning_rate': 5.259541984732824e-06, 'epoch': 3.01}
+{'loss': 0.4716, 'grad_norm': 8.49290943145752, 'learning_rate': 4.496183206106871e-06, 'epoch': 3.16}
+{'loss': 0.4697, 'grad_norm': 7.80681037902832, 'learning_rate': 3.732824427480916e-06, 'epoch': 3.3}
+{'loss': 0.4519, 'grad_norm': 6.255032539367676, 'learning_rate': 2.969465648854962e-06, 'epoch': 3.44}
+{'loss': 0.4788, 'grad_norm': 6.483933925628662, 'learning_rate': 2.2061068702290077e-06, 'epoch': 3.59}
+{'loss': 0.4466, 'grad_norm': 6.028548240661621, 'learning_rate': 1.4427480916030536e-06, 'epoch': 3.73}
+{'loss': 0.4716, 'grad_norm': 6.935089111328125, 'learning_rate': 6.793893129770993e-07, 'epoch': 3.87}
+{'eval_loss': 1.7928493022918701, 'eval_accuracy': 0.3722644551946556, 'eval_precision': 0.3749744105368435, 'eval_recall': 0.4345007420634439, 'eval_f1': 0.3663561064222707, 'eval_runtime': 254.2537, 'eval_samples_per_second': 85.367, 'eval_steps_per_second': 0.669, 'epoch': 4.0}
+{'train_runtime': 7550.7627, 'train_samples_per_second': 23.599, 'train_steps_per_second': 0.369, 'train_loss': 0.6454731586844884, 'epoch': 4.0}
+100%|█████████████████████████████████████████████████████████████████████████████| 2788/2788 [2:05:50<00:00,  2.71s/it]
+[Eval] on test set...
+/home/datastudio/huy/modeltest_venv/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+100%|█████████████████████████████████████████████████████████████████████████████████| 172/172 [04:21<00:00,  1.52s/it]
+{'test_loss': 1.5899174213409424, 'test_accuracy': 0.4464237026265564, 'test_precision': 0.42573856076822486, 'test_recall': 0.42873397717347816, 'test_f1': 0.39828348509478584, 'test_runtime': 264.2185, 'test_samples_per_second': 83.287, 'test_steps_per_second': 0.651}
+              precision    recall  f1-score   support
+
+    Negative       0.64      0.63      0.63     10212
+     Neutral       0.25      0.50      0.33      4524
+    Positive       0.39      0.16      0.23      7270
+
+    accuracy                           0.45     22006
+   macro avg       0.43      0.43      0.40     22006
+weighted avg       0.48      0.45      0.44     22006
+
+[Save] Saving model...
+[✅ Done] Model saved at ./finbert_finetuned_safe

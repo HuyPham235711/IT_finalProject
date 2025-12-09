@@ -1,0 +1,6 @@
+2025-10-16 12:41:04,260 [INFO] Logger initialized. Writing to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\logs\eval_lstm.log
+2025-10-16 12:41:04,260 [INFO] === Evaluating LSTM Baseline ===
+2025-10-16 12:41:04,410 [INFO] Model loaded from E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm\lstm_baseline.pt
+2025-10-16 12:41:06,924 [INFO] Metrics: {'MSE': 0.6911525365436194, 'MAE': 0.8259752838142473}
+2025-10-16 12:41:06,924 [INFO] Saved metrics to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm\lstm_baseline_metrics.json
+2025-10-16 12:41:06,924 [INFO] Saved embeddings to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm\ohlcv_embeddings.npy

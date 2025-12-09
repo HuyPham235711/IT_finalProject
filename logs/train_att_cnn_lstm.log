@@ -1,0 +1,16 @@
+2025-10-17 10:35:30,900 [INFO] Logger initialized. Writing to logs\train_att_cnn_lstm.log
+2025-10-17 10:35:30,901 [INFO] === Training ATT-CNN-LSTM (Week4 Task1) ===
+2025-10-17 10:35:32,031 [INFO] Train shape=(62881, 8), Valid shape=(2119, 8)
+2025-10-17 10:35:32,181 [INFO] Created 62821 train sequences, 2059 valid sequences
+2025-10-17 10:36:32,527 [INFO] Epoch 1/10 - Train Loss: 298.145990, Val Loss: 298.276075
+2025-10-17 10:37:30,786 [INFO] Epoch 2/10 - Train Loss: 273.771218, Val Loss: 293.924453
+2025-10-17 10:38:28,338 [INFO] Epoch 3/10 - Train Loss: 273.606918, Val Loss: 294.709579
+2025-10-17 10:39:25,821 [INFO] Epoch 4/10 - Train Loss: 273.957440, Val Loss: 294.608107
+2025-10-17 10:40:23,451 [INFO] Epoch 5/10 - Train Loss: 273.828597, Val Loss: 295.460197
+2025-10-17 10:41:21,639 [INFO] Epoch 6/10 - Train Loss: 273.799853, Val Loss: 293.920759
+2025-10-17 10:42:19,430 [INFO] Epoch 7/10 - Train Loss: 273.853791, Val Loss: 293.976853
+2025-10-17 10:43:17,069 [INFO] Epoch 8/10 - Train Loss: 273.547245, Val Loss: 295.842527
+2025-10-17 10:44:14,790 [INFO] Epoch 9/10 - Train Loss: 273.774056, Val Loss: 293.923132
+2025-10-17 10:45:12,998 [INFO] Epoch 10/10 - Train Loss: 273.638408, Val Loss: 296.135805
+2025-10-17 10:45:13,473 [INFO] [DONE] Saved metrics: {'MSE': 293.9207763671875, 'MAE': 14.118670463562012}
+2025-10-17 10:45:13,788 [INFO] Saved embeddings to results/lstm_advanced/att_cnn_lstm_embeddings.npy, shape=(2059, 2304)
