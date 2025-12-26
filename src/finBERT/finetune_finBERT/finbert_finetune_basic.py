@@ -1,4 +1,3 @@
-# finbert_finetune_full.py
 import os
 import math
 import pandas as pd

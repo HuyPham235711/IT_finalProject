@@ -46,8 +46,8 @@ FROM
     SELECT
         *,
         ROW_NUMBER() OVER (
-            PARTITION BY datetime,title,url,source, sentiment_label -- Liệt kê TẤT CẢ các cột để xác định trùng lặp
-            ORDER BY ctid -- Sử dụng ctid hoặc cột khóa chính/thời gian nếu bạn muốn giữ lại một bản ghi cụ thể
+            PARTITION BY datetime,title,url,source, sentiment_label -
+            ORDER BY ctid 
         ) AS row_num
     FROM
         it_final.media
@@ -72,7 +72,7 @@ WHERE
     ctid IN (
         SELECT ctid
         FROM duplicate_rows
-        WHERE row_num > 1 -- Xóa tất cả các bản sao (từ bản thứ 2 trở đi)
+        WHERE row_num > 
     );
 
 -- chuấn hóa label

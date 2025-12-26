@@ -1,0 +1,34 @@
+2025-12-25 17:00:08,116 | INFO | [ALIGN] Dropped first 60 price rows.
+2025-12-25 17:00:08,211 | INFO | Env ready | T=62821 | context_dim=260
+2025-12-25 17:00:09,536 | INFO | TRAIN step=5000 | equity=0.9256 | sharpe=-0.746 | mdd=0.579 | turnover=0.330
+2025-12-25 17:00:10,951 | INFO | TRAIN step=10000 | equity=0.5910 | sharpe=-0.961 | mdd=0.597 | turnover=0.254
+2025-12-25 17:00:12,719 | INFO | TRAIN step=15000 | equity=0.0815 | sharpe=-2.070 | mdd=0.938 | turnover=0.234
+2025-12-25 17:00:15,064 | INFO | TRAIN step=20000 | equity=0.0485 | sharpe=-1.962 | mdd=0.963 | turnover=0.217
+2025-12-25 17:00:17,222 | INFO | TRAIN step=25000 | equity=0.0382 | sharpe=-1.757 | mdd=0.974 | turnover=0.206
+2025-12-25 17:00:19,368 | INFO | TRAIN step=30000 | equity=0.0359 | sharpe=-1.566 | mdd=0.986 | turnover=0.203
+2025-12-25 17:00:21,627 | INFO | TRAIN step=35000 | equity=0.0165 | sharpe=-1.630 | mdd=0.989 | turnover=0.204
+2025-12-25 17:00:23,714 | INFO | TRAIN step=40000 | equity=0.0052 | sharpe=-1.802 | mdd=0.996 | turnover=0.202
+2025-12-25 17:00:26,411 | INFO | TRAIN step=45000 | equity=0.0022 | sharpe=-1.865 | mdd=0.998 | turnover=0.202
+2025-12-25 17:00:29,509 | INFO | TRAIN step=50000 | equity=0.0009 | sharpe=-1.948 | mdd=0.999 | turnover=0.202
+2025-12-25 17:00:31,134 | INFO | TRAIN step=55000 | equity=0.0003 | sharpe=-2.073 | mdd=1.000 | turnover=0.204
+2025-12-25 17:00:33,035 | INFO | TRAIN step=60000 | equity=0.0001 | sharpe=-2.221 | mdd=1.000 | turnover=0.200
+2025-12-25 17:00:33,891 | INFO | TRAIN step=62819 | equity=0.0001 | sharpe=-2.241 | mdd=1.000 | turnover=0.199
+2025-12-25 17:00:34,012 | INFO | Saved checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\bandit_fusion\linucb_full_fusion_train_v1.npz
+2025-12-25 17:00:34,012 | INFO | === DONE (FULL LinUCB) ===
+2025-12-25 20:35:38,658 | INFO | [ALIGN] Dropped first 60 price rows.
+2025-12-25 20:35:38,742 | INFO | Env ready | T=62821 | context_dim=260
+2025-12-25 20:35:40,068 | INFO | TRAIN step=5000 | equity=0.9256 | sharpe=-0.746 | mdd=0.579 | turnover=0.330
+2025-12-25 20:35:41,312 | INFO | TRAIN step=10000 | equity=0.5910 | sharpe=-0.961 | mdd=0.597 | turnover=0.254
+2025-12-25 20:35:42,637 | INFO | TRAIN step=15000 | equity=0.0815 | sharpe=-2.070 | mdd=0.938 | turnover=0.234
+2025-12-25 20:35:44,025 | INFO | TRAIN step=20000 | equity=0.0485 | sharpe=-1.962 | mdd=0.963 | turnover=0.217
+2025-12-25 20:35:45,298 | INFO | TRAIN step=25000 | equity=0.0382 | sharpe=-1.757 | mdd=0.974 | turnover=0.206
+2025-12-25 20:35:46,645 | INFO | TRAIN step=30000 | equity=0.0359 | sharpe=-1.566 | mdd=0.986 | turnover=0.203
+2025-12-25 20:35:47,957 | INFO | TRAIN step=35000 | equity=0.0165 | sharpe=-1.630 | mdd=0.989 | turnover=0.204
+2025-12-25 20:35:49,245 | INFO | TRAIN step=40000 | equity=0.0052 | sharpe=-1.802 | mdd=0.996 | turnover=0.202
+2025-12-25 20:35:50,543 | INFO | TRAIN step=45000 | equity=0.0022 | sharpe=-1.865 | mdd=0.998 | turnover=0.202
+2025-12-25 20:35:51,941 | INFO | TRAIN step=50000 | equity=0.0009 | sharpe=-1.948 | mdd=0.999 | turnover=0.202
+2025-12-25 20:35:53,223 | INFO | TRAIN step=55000 | equity=0.0003 | sharpe=-2.073 | mdd=1.000 | turnover=0.204
+2025-12-25 20:35:54,583 | INFO | TRAIN step=60000 | equity=0.0001 | sharpe=-2.221 | mdd=1.000 | turnover=0.200
+2025-12-25 20:35:55,393 | INFO | TRAIN step=62819 | equity=0.0001 | sharpe=-2.241 | mdd=1.000 | turnover=0.199
+2025-12-25 20:35:55,505 | INFO | Saved checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\bandit_fusion\linucb_full_fusion_train_v1.npz
+2025-12-25 20:35:55,505 | INFO | === DONE (FULL LinUCB) ===

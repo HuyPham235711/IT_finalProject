@@ -1,0 +1,26 @@
+{
+  "scaler_type": "minmax",
+  "fit_on": "it_final.ohlcv_train",
+  "fit_period": "2017-09-23 \u2192 2024-11-25",
+  "features": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "mins": [
+    3139.76,
+    3152.96,
+    3122.28,
+    3139.76,
+    0.0
+  ],
+  "maxs": [
+    99396.0,
+    99800.0,
+    99136.0,
+    99414.0,
+    8736.307
+  ]
+}

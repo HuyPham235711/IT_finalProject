@@ -1,0 +1,104 @@
+project:
+  name: "week3_baselines"
+  root_dir: "E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT"
+  run_id: "auto"
+
+logging:
+  level: "INFO"
+  log_dir: "E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/logs"
+  file_name: "week3_${project.run_id}.log"
+
+postgres:
+  conn_env: "PG_CONN_STR"
+  schema: "it_final"
+  tables:
+    ohlcv_train: "processed_ohlcv_train"
+    ohlcv_valid: "processed_ohlcv_valid"
+    ohlcv_test: "processed_ohlcv_test"
+    ohlcv_backtest: "processed_ohlcv_backtest"
+
+data:
+  time_col: "datetime"
+  features: ["open", "high", "low", "close", "volume", "sma14", "rsi14"]
+  target: "close"
+  lookback: 60
+  stride: 1
+  symbol: "BTCUSD"
+
+# =======================================================
+#  LSTM BASELINE
+# =======================================================
+lstm:
+  task: "regression_close_t_plus_1"
+  batch_size: 256
+  num_epochs: 30                # từ 5 → 30 để mô hình học được pattern
+  hidden_size: 128              # đủ dùng với 7 features
+  num_layers: 2
+  dropout: 0.2                  # chống overfitting
+  bidirectional: false
+  optimizer: "adam"
+  lr: 0.001
+  weight_decay: 1e-5            # quan trọng để tránh gradient collapse
+  device: "cuda:0"
+
+# =======================================================
+#  ADVANCED MODEL 1 — ATT-CNN-LSTM
+# =======================================================
+lstm_advanced1:
+  data:
+    schema: it_final
+    train_table: processed_ohlcv_train
+    valid_table: processed_ohlcv_valid
+    test_table: processed_ohlcv_test
+
+  lookback: 60
+  hidden_size: 256            
+  embedding_dim: 256
+  num_layers: 2
+  dropout: 0.3
+  batch_size: 64          
+  lr: 0.0005                 
+  weight_decay: 1e-5       
+  device: cuda:0
+  epochs: 40               
+  model_type: "att_cnn_lstm"
+
+# =======================================================
+#  ADVANCED MODEL 2 – TRANSFORMER
+# =======================================================
+lstm_advanced2:
+  data:
+    schema: it_final
+    train_table: processed_ohlcv_train
+    valid_table: processed_ohlcv_valid
+    test_table: processed_ohlcv_test
+
+  model_type: "transformer"
+  lookback: 60
+  embedding_dim: 256        
+  num_heads: 4               
+  num_layers: 2
+  dropout: 0.3
+  batch_size: 64
+  lr: 0.0003               
+  weight_decay: 1e-5
+  epochs: 50
+  device: cuda:0
+
+evaluation:
+  metrics: ["mse", "mae"]
+  save_dir: "E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/lstm"
+  outputs:
+    model_file: "lstm_baseline.pt"
+    metrics_file: "lstm_baseline_metrics.json"
+    embeddings_file: "ohlcv_embeddings.npy"
+
+finbert:
+  results_dir: "E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/finbert"
+  outputs:
+    predictions_csv: "finbert_baseline_predictions.csv"
+    metrics_json: "finbert_baseline_metrics.json"
+    confusion_png: "confusion_matrix.png"
+
+reproducibility:
+  seed: 42

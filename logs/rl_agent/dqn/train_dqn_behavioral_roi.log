@@ -1,0 +1,74 @@
+2025-12-16 13:49:51,313 | INFO | === TRAIN DQN (Behavioral ROI, segment-aware, hourly) ===
+2025-12-16 13:51:26,936 | INFO | === TRAIN DQN (Behavioral ROI, segment-aware, hourly) ===
+2025-12-16 13:51:28,564 | INFO | Ep 1/60 | steps=2000 | total_reward=-1965.879322 | final_balance=13979.51 | ROI=-0.8602 | eps=0.9905 | 0.1s
+2025-12-16 13:51:28,569 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:51:28,593 | INFO | Ep 2/60 | steps=2000 | total_reward=-2195.823590 | final_balance=10694.45 | ROI=-0.8931 | eps=0.9810 | 0.0s
+2025-12-16 13:51:28,641 | INFO | Ep 3/60 | steps=2000 | total_reward=-2238.974719 | final_balance=10352.83 | ROI=-0.8965 | eps=0.9715 | 0.0s
+2025-12-16 13:51:28,708 | INFO | Ep 4/60 | steps=2000 | total_reward=-1882.224544 | final_balance=14966.99 | ROI=-0.8503 | eps=0.9620 | 0.1s
+2025-12-16 13:51:28,712 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:51:28,953 | INFO | Ep 5/60 | steps=2000 | total_reward=-1956.828249 | final_balance=14399.36 | ROI=-0.8560 | eps=0.9525 | 0.2s
+2025-12-16 13:51:34,701 | INFO | Ep 6/60 | steps=2000 | total_reward=-2600.400002 | final_balance=7056.64 | ROI=-0.9294 | eps=0.9430 | 5.7s
+2025-12-16 13:51:40,814 | INFO | Ep 7/60 | steps=2000 | total_reward=-1776.939306 | final_balance=16816.05 | ROI=-0.8318 | eps=0.9335 | 6.1s
+2025-12-16 13:51:40,817 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:51:46,931 | INFO | Ep 8/60 | steps=2000 | total_reward=-1744.653082 | final_balance=15572.54 | ROI=-0.8443 | eps=0.9240 | 6.1s
+2025-12-16 13:51:52,934 | INFO | Ep 9/60 | steps=2000 | total_reward=-1636.285286 | final_balance=18392.09 | ROI=-0.8161 | eps=0.9145 | 6.0s
+2025-12-16 13:51:52,950 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:51:58,795 | INFO | Ep 10/60 | steps=2000 | total_reward=-1652.672594 | final_balance=18102.50 | ROI=-0.8190 | eps=0.9050 | 5.8s
+2025-12-16 13:52:04,673 | INFO | Ep 11/60 | steps=2000 | total_reward=-1583.366081 | final_balance=20478.40 | ROI=-0.7952 | eps=0.8955 | 5.9s
+2025-12-16 13:52:04,677 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:52:10,272 | INFO | Ep 12/60 | steps=2000 | total_reward=-2179.712689 | final_balance=11330.19 | ROI=-0.8867 | eps=0.8860 | 5.6s
+2025-12-16 13:52:16,212 | INFO | Ep 13/60 | steps=2000 | total_reward=-1520.684866 | final_balance=21725.06 | ROI=-0.7827 | eps=0.8765 | 5.9s
+2025-12-16 13:52:16,221 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:52:21,853 | INFO | Ep 14/60 | steps=2000 | total_reward=-2122.852287 | final_balance=11878.83 | ROI=-0.8812 | eps=0.8670 | 5.6s
+2025-12-16 13:52:27,894 | INFO | Ep 15/60 | steps=2000 | total_reward=-1364.548484 | final_balance=25483.02 | ROI=-0.7452 | eps=0.8575 | 6.0s
+2025-12-16 13:52:27,897 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:52:33,363 | INFO | Ep 16/60 | steps=2000 | total_reward=-2396.435329 | final_balance=8379.76 | ROI=-0.9162 | eps=0.8480 | 5.5s
+2025-12-16 13:52:38,794 | INFO | Ep 17/60 | steps=2000 | total_reward=-2055.006679 | final_balance=12565.08 | ROI=-0.8743 | eps=0.8385 | 5.4s
+2025-12-16 13:52:44,089 | INFO | Ep 18/60 | steps=2000 | total_reward=-1943.598506 | final_balance=14603.28 | ROI=-0.8540 | eps=0.8290 | 5.3s
+2025-12-16 13:52:49,668 | INFO | Ep 19/60 | steps=2000 | total_reward=-1581.985145 | final_balance=18958.02 | ROI=-0.8104 | eps=0.8195 | 5.6s
+2025-12-16 13:52:55,071 | INFO | Ep 20/60 | steps=2000 | total_reward=-715.587519 | final_balance=45646.55 | ROI=-0.5435 | eps=0.8100 | 5.4s
+2025-12-16 13:52:55,071 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:53:00,496 | INFO | Ep 21/60 | steps=2000 | total_reward=-1636.239450 | final_balance=18771.37 | ROI=-0.8123 | eps=0.8005 | 5.4s
+2025-12-16 13:53:06,040 | INFO | Ep 22/60 | steps=2000 | total_reward=-677.600421 | final_balance=40719.65 | ROI=-0.5928 | eps=0.7910 | 5.5s
+2025-12-16 13:53:11,534 | INFO | Ep 23/60 | steps=2000 | total_reward=-1103.627992 | final_balance=32698.55 | ROI=-0.6730 | eps=0.7815 | 5.5s
+2025-12-16 13:53:17,212 | INFO | Ep 24/60 | steps=2000 | total_reward=-1376.263057 | final_balance=25067.62 | ROI=-0.7493 | eps=0.7720 | 5.7s
+2025-12-16 13:53:23,295 | INFO | Ep 25/60 | steps=2000 | total_reward=-1982.389373 | final_balance=13481.57 | ROI=-0.8652 | eps=0.7625 | 6.1s
+2025-12-16 13:53:29,463 | INFO | Ep 26/60 | steps=2000 | total_reward=-1224.713456 | final_balance=29017.72 | ROI=-0.7098 | eps=0.7530 | 6.2s
+2025-12-16 13:53:35,488 | INFO | Ep 27/60 | steps=2000 | total_reward=-1438.219644 | final_balance=24019.46 | ROI=-0.7598 | eps=0.7435 | 6.0s
+2025-12-16 13:53:41,597 | INFO | Ep 28/60 | steps=2000 | total_reward=-1756.021566 | final_balance=16804.55 | ROI=-0.8320 | eps=0.7340 | 6.1s
+2025-12-16 13:53:47,635 | INFO | Ep 29/60 | steps=2000 | total_reward=-1368.448544 | final_balance=23848.95 | ROI=-0.7615 | eps=0.7245 | 6.0s
+2025-12-16 13:53:53,663 | INFO | Ep 30/60 | steps=2000 | total_reward=-2001.500803 | final_balance=12369.57 | ROI=-0.8763 | eps=0.7150 | 6.0s
+2025-12-16 13:53:59,851 | INFO | Ep 31/60 | steps=2000 | total_reward=-927.222007 | final_balance=34556.15 | ROI=-0.6544 | eps=0.7055 | 6.2s
+2025-12-16 13:54:06,165 | INFO | Ep 32/60 | steps=2000 | total_reward=-1402.192636 | final_balance=23240.12 | ROI=-0.7676 | eps=0.6960 | 6.3s
+2025-12-16 13:54:12,511 | INFO | Ep 33/60 | steps=2000 | total_reward=-1218.531175 | final_balance=28837.97 | ROI=-0.7116 | eps=0.6865 | 6.3s
+2025-12-16 13:54:18,771 | INFO | Ep 34/60 | steps=2000 | total_reward=-1536.360240 | final_balance=21472.43 | ROI=-0.7853 | eps=0.6770 | 6.3s
+2025-12-16 13:54:25,019 | INFO | Ep 35/60 | steps=2000 | total_reward=-1320.836508 | final_balance=23539.98 | ROI=-0.7646 | eps=0.6675 | 6.2s
+2025-12-16 13:54:31,547 | INFO | Ep 36/60 | steps=2000 | total_reward=-1383.025400 | final_balance=25177.98 | ROI=-0.7482 | eps=0.6580 | 6.5s
+2025-12-16 13:54:37,842 | INFO | Ep 37/60 | steps=2000 | total_reward=-1202.174839 | final_balance=30404.14 | ROI=-0.6960 | eps=0.6485 | 6.3s
+2025-12-16 13:54:44,222 | INFO | Ep 38/60 | steps=2000 | total_reward=-979.063729 | final_balance=36226.51 | ROI=-0.6377 | eps=0.6390 | 6.4s
+2025-12-16 13:54:50,448 | INFO | Ep 39/60 | steps=2000 | total_reward=-1339.326506 | final_balance=25704.15 | ROI=-0.7430 | eps=0.6295 | 6.2s
+2025-12-16 13:54:56,735 | INFO | Ep 40/60 | steps=2000 | total_reward=-1795.512881 | final_balance=10718.02 | ROI=-0.8928 | eps=0.6200 | 6.3s
+2025-12-16 13:55:03,061 | INFO | Ep 41/60 | steps=2000 | total_reward=-1255.771611 | final_balance=28186.97 | ROI=-0.7181 | eps=0.6105 | 6.3s
+2025-12-16 13:55:09,425 | INFO | Ep 42/60 | steps=2000 | total_reward=-1082.734160 | final_balance=33410.98 | ROI=-0.6659 | eps=0.6010 | 6.4s
+2025-12-16 13:55:15,725 | INFO | Ep 43/60 | steps=2000 | total_reward=-1512.812937 | final_balance=18922.23 | ROI=-0.8108 | eps=0.5915 | 6.3s
+2025-12-16 13:55:22,264 | INFO | Ep 44/60 | steps=2000 | total_reward=-603.100907 | final_balance=49326.07 | ROI=-0.5067 | eps=0.5820 | 6.5s
+2025-12-16 13:55:22,264 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:55:28,417 | INFO | Ep 45/60 | steps=2000 | total_reward=-702.617247 | final_balance=48803.99 | ROI=-0.5120 | eps=0.5725 | 6.2s
+2025-12-16 13:55:34,671 | INFO | Ep 46/60 | steps=2000 | total_reward=-1285.162859 | final_balance=25612.41 | ROI=-0.7439 | eps=0.5630 | 6.3s
+2025-12-16 13:55:41,123 | INFO | Ep 47/60 | steps=2000 | total_reward=-1085.024311 | final_balance=33543.06 | ROI=-0.6646 | eps=0.5535 | 6.5s
+2025-12-16 13:55:47,427 | INFO | Ep 48/60 | steps=2000 | total_reward=-1560.819813 | final_balance=19892.67 | ROI=-0.8011 | eps=0.5440 | 6.3s
+2025-12-16 13:55:54,031 | INFO | Ep 49/60 | steps=2000 | total_reward=-1266.114602 | final_balance=27708.87 | ROI=-0.7229 | eps=0.5345 | 6.6s
+2025-12-16 13:56:00,468 | INFO | Ep 50/60 | steps=2000 | total_reward=-851.916808 | final_balance=41986.96 | ROI=-0.5801 | eps=0.5250 | 6.4s
+2025-12-16 13:56:06,878 | INFO | Ep 51/60 | steps=2000 | total_reward=-701.026067 | final_balance=42152.49 | ROI=-0.5785 | eps=0.5155 | 6.4s
+2025-12-16 13:56:13,248 | INFO | Ep 52/60 | steps=2000 | total_reward=-876.090962 | final_balance=39074.43 | ROI=-0.6093 | eps=0.5060 | 6.4s
+2025-12-16 13:56:19,791 | INFO | Ep 53/60 | steps=2000 | total_reward=-371.184970 | final_balance=61564.92 | ROI=-0.3844 | eps=0.4965 | 6.5s
+2025-12-16 13:56:19,791 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:56:26,302 | INFO | Ep 54/60 | steps=2000 | total_reward=-1290.095481 | final_balance=25477.39 | ROI=-0.7452 | eps=0.4870 | 6.5s
+2025-12-16 13:56:32,808 | INFO | Ep 55/60 | steps=2000 | total_reward=1037.904882 | final_balance=218170.51 | ROI=1.1817 | eps=0.4775 | 6.5s
+2025-12-16 13:56:32,819 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\behavioral_roi\best.pt
+2025-12-16 13:56:39,150 | INFO | Ep 56/60 | steps=2000 | total_reward=-462.000157 | final_balance=60814.24 | ROI=-0.3919 | eps=0.4680 | 6.3s
+2025-12-16 13:56:45,672 | INFO | Ep 57/60 | steps=2000 | total_reward=-1149.708091 | final_balance=22480.24 | ROI=-0.7752 | eps=0.4585 | 6.5s
+2025-12-16 13:56:52,306 | INFO | Ep 58/60 | steps=2000 | total_reward=-1235.676824 | final_balance=28974.95 | ROI=-0.7103 | eps=0.4490 | 6.6s
+2025-12-16 13:56:58,743 | INFO | Ep 59/60 | steps=2000 | total_reward=-642.537743 | final_balance=50790.93 | ROI=-0.4921 | eps=0.4395 | 6.4s
+2025-12-16 13:57:05,168 | INFO | Ep 60/60 | steps=2000 | total_reward=-846.711967 | final_balance=41803.85 | ROI=-0.5820 | eps=0.4300 | 6.4s
+2025-12-16 13:57:05,182 | INFO | === TRAIN DQN DONE ===

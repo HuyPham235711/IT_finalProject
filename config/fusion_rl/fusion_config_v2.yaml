@@ -1,0 +1,56 @@
+# ============================================================
+# Fusion MLP v2 config
+# ============================================================
+
+project:
+  name: "fusion_rl_v3"
+  root_dir: "E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT"
+
+# ------------------------------------------------------------
+# Embedding sources (TRAIN)
+# ------------------------------------------------------------
+sources:
+  attcnn_embeddings:
+    path: "results/lstm_advanced/v3/train_inference/att_cnn_embeddings_train_v3.npy"
+    dim: 768          # 3 * hidden_dim (256)
+
+  transformer_embeddings:
+    path: "results/lstm_advanced/v3/train_inference/transformer_embeddings_train_v3.npy"
+    dim: 512          # mean + max = 2 * 256
+
+  finbert_embeddings:
+    path: "results/finbert/sampler_v2/train_inference/finbert_daily_embeddings_train.npy"
+    dim: 3          # 3 labels
+
+# ------------------------------------------------------------
+# Fusion model
+# ------------------------------------------------------------
+model:
+  type: "mlp"
+  input_dim: 1283     # 768 + 512 + 3
+  hidden_dims: [1024, 512]
+  output_dim: 256     
+  dropout: 0.2
+  activation: "relu"
+  layer_norm: true
+
+# ------------------------------------------------------------
+# Training
+# ------------------------------------------------------------
+training:
+  batch_size: 64
+  epochs: 100
+  lr: 0.0001
+  optimizer: "adam"
+  weight_decay: 0.00001
+  loss: "mse"
+  shuffle: true
+  num_workers: 0
+
+# ------------------------------------------------------------
+# Output
+# ------------------------------------------------------------
+output:
+  save_dir: "results/fusion_rl/v2"
+  checkpoint: "fusion_mlp_v2.pt"
+  embeddings_train: "fusion_embeddings_train_v2.npy"

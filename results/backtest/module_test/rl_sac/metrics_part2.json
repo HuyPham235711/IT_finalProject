@@ -1,0 +1,16 @@
+{
+  "final_equity": 999.6004880857885,
+  "total_return": -0.00040252986209521335,
+  "max_drawdown": 0.0005694470337839395,
+  "avg_position": 0.003776665718324724,
+  "position_std": 0.00040274954773092614,
+  "raw_action_mean": 0.023747243419770272,
+  "raw_action_abs_mean": 0.023747243419770272,
+  "desired_delta_abs_mean": 2.4829049264231033e-05,
+  "delta_pos_abs_mean": 2.4829049264231036e-05,
+  "pct_desired_delta_is_zero": 0.9548387096774194,
+  "n_steps": 155,
+  "deadband_action_used": 0.0,
+  "deadband_delta_used": 0.0005,
+  "max_delta_pos": 0.02
+}

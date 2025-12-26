@@ -1,0 +1,12 @@
+========== TRADE SUMMARY ==========
+From: 01/03/2020
+To: 31/03/2020
+Initial Balance : $1,000.00
+Final Balance   : $1,163.01
+Total PnL       : $163.01
+ROI             : 16.30%
+-----------------------------------
+LONG  count     : 65
+SHORT count     : 66
+FLAT  count     : 554
+===================================

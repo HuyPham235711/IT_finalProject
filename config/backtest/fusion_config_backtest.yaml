@@ -1,12 +1,14 @@
-# Fusion Backtest - Only generate (no training)
-input_dim: 3843
+# Fusion Backtest v3
+
+input_dim: 1283
 hidden_dim: 512
 output_dim: 256
 dropout: 0.2
 
-save_path: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/fusion_rl/train_inference/fusion_checkpoint.pt
+# checkpoint
+save_path: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/fusion_rl/v2/fusion_mlp_v2.pt
 
 sources:
-  transformer_embeddings: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/backtest/lstm_advanced/transformer_backtest_embeddings.npy
-  attcnn_embeddings: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/backtest/lstm_advanced/att_cnn_backtest_embeddings.npy
+  transformer_embeddings: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/backtest/lstm_advanced/v3/transformer_backtest_embeddings_v3.npy
+  attcnn_embeddings: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/backtest/lstm_advanced/v3/att_cnn_backtest_embeddings_v3.npy
   finbert_embeddings: E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT/results/backtest/finbert/finbert_daily_embeddings_backtest.npy

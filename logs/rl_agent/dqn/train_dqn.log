@@ -1,0 +1,72 @@
+2025-12-15 13:00:32,314 | INFO | === TRAIN DQN (custom env/reward) ===
+2025-12-15 13:00:32,712 | INFO | Train rows: 62881
+2025-12-15 13:00:32,751 | INFO | Env ready | state_dim=257 | n_actions=3
+2025-12-15 13:00:39,832 | INFO | Ep 1/60 | steps=2000 | total_reward=-146.413664 | final_balance=51.50 | avg_loss=0.000230 | epsilon=0.9873
+2025-12-15 13:00:39,840 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\best_ep1.pt
+2025-12-15 13:00:45,913 | INFO | Ep 2/60 | steps=2000 | total_reward=-108.623471 | final_balance=179.40 | avg_loss=0.000292 | epsilon=0.9747
+2025-12-15 13:00:45,919 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\best_ep2.pt
+2025-12-15 13:00:52,105 | INFO | Ep 3/60 | steps=2000 | total_reward=-152.167241 | final_balance=67.80 | avg_loss=0.000298 | epsilon=0.9620
+2025-12-15 13:00:58,691 | INFO | Ep 4/60 | steps=2000 | total_reward=-101.804769 | final_balance=213.82 | avg_loss=0.000327 | epsilon=0.9493
+2025-12-15 13:00:58,699 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\best_ep4.pt
+2025-12-15 13:01:04,579 | INFO | Ep 5/60 | steps=2000 | total_reward=-140.553585 | final_balance=133.34 | avg_loss=0.000332 | epsilon=0.9367
+2025-12-15 13:01:10,518 | INFO | Ep 6/60 | steps=2000 | total_reward=-111.210340 | final_balance=288.63 | avg_loss=0.000353 | epsilon=0.9240
+2025-12-15 13:01:10,526 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\best_ep6.pt
+2025-12-15 13:01:16,778 | INFO | Ep 7/60 | steps=2000 | total_reward=-111.987274 | final_balance=178.97 | avg_loss=0.000392 | epsilon=0.9113
+2025-12-15 13:01:22,916 | INFO | Ep 8/60 | steps=2000 | total_reward=-146.283727 | final_balance=29.31 | avg_loss=0.000406 | epsilon=0.8987
+2025-12-15 13:01:29,091 | INFO | Ep 9/60 | steps=2000 | total_reward=-115.655244 | final_balance=137.20 | avg_loss=0.000440 | epsilon=0.8860
+2025-12-15 13:01:35,296 | INFO | Ep 10/60 | steps=2000 | total_reward=-150.555494 | final_balance=38.59 | avg_loss=0.000492 | epsilon=0.8733
+2025-12-15 13:01:42,226 | INFO | Ep 11/60 | steps=2000 | total_reward=-125.817325 | final_balance=175.13 | avg_loss=0.000498 | epsilon=0.8607
+2025-12-15 13:01:51,274 | INFO | Ep 12/60 | steps=2000 | total_reward=-146.207584 | final_balance=104.16 | avg_loss=0.000525 | epsilon=0.8480
+2025-12-15 13:01:58,765 | INFO | Ep 13/60 | steps=2000 | total_reward=-159.434743 | final_balance=71.48 | avg_loss=0.000595 | epsilon=0.8353
+2025-12-15 13:02:05,964 | INFO | Ep 14/60 | steps=2000 | total_reward=-147.063362 | final_balance=34.35 | avg_loss=0.000616 | epsilon=0.8227
+2025-12-15 13:02:12,529 | INFO | Ep 15/60 | steps=2000 | total_reward=-128.897042 | final_balance=179.14 | avg_loss=0.000641 | epsilon=0.8100
+2025-12-15 13:02:20,250 | INFO | Ep 16/60 | steps=2000 | total_reward=-156.378790 | final_balance=35.63 | avg_loss=0.000657 | epsilon=0.7973
+2025-12-15 13:02:27,031 | INFO | Ep 17/60 | steps=2000 | total_reward=-154.487897 | final_balance=65.03 | avg_loss=0.000694 | epsilon=0.7847
+2025-12-15 13:02:34,212 | INFO | Ep 18/60 | steps=2000 | total_reward=-154.718417 | final_balance=40.65 | avg_loss=0.000793 | epsilon=0.7720
+2025-12-15 13:02:40,630 | INFO | Ep 19/60 | steps=2000 | total_reward=-104.906113 | final_balance=187.91 | avg_loss=0.000815 | epsilon=0.7593
+2025-12-15 13:02:48,290 | INFO | Ep 20/60 | steps=2000 | total_reward=-97.354601 | final_balance=237.46 | avg_loss=0.000815 | epsilon=0.7467
+2025-12-15 13:02:54,832 | INFO | Ep 21/60 | steps=2000 | total_reward=-115.232966 | final_balance=163.24 | avg_loss=0.000879 | epsilon=0.7340
+2025-12-15 13:03:02,656 | INFO | Ep 22/60 | steps=2000 | total_reward=-127.357554 | final_balance=47.74 | avg_loss=0.000840 | epsilon=0.7213
+2025-12-15 13:03:09,903 | INFO | Ep 23/60 | steps=2000 | total_reward=-105.196285 | final_balance=308.02 | avg_loss=0.001054 | epsilon=0.7087
+2025-12-15 13:03:09,913 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\best_ep23.pt
+2025-12-15 13:03:16,977 | INFO | Ep 24/60 | steps=2000 | total_reward=-151.733855 | final_balance=104.54 | avg_loss=0.001040 | epsilon=0.6960
+2025-12-15 13:03:24,308 | INFO | Ep 25/60 | steps=2000 | total_reward=-91.271808 | final_balance=200.84 | avg_loss=0.001130 | epsilon=0.6833
+2025-12-15 13:03:31,467 | INFO | Ep 26/60 | steps=2000 | total_reward=-125.581838 | final_balance=196.72 | avg_loss=0.001196 | epsilon=0.6707
+2025-12-15 13:03:37,856 | INFO | Ep 27/60 | steps=2000 | total_reward=-60.947125 | final_balance=569.50 | avg_loss=0.001133 | epsilon=0.6580
+2025-12-15 13:03:37,864 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\best_ep27.pt
+2025-12-15 13:03:44,843 | INFO | Ep 28/60 | steps=2000 | total_reward=-142.008829 | final_balance=155.07 | avg_loss=0.001247 | epsilon=0.6453
+2025-12-15 13:03:52,807 | INFO | Ep 29/60 | steps=2000 | total_reward=-93.561364 | final_balance=490.53 | avg_loss=0.001187 | epsilon=0.6327
+2025-12-15 13:04:01,106 | INFO | Ep 30/60 | steps=2000 | total_reward=-109.059966 | final_balance=148.25 | avg_loss=0.001334 | epsilon=0.6200
+2025-12-15 13:04:10,618 | INFO | Ep 31/60 | steps=2000 | total_reward=-110.664999 | final_balance=295.75 | avg_loss=0.001311 | epsilon=0.6073
+2025-12-15 13:04:18,826 | INFO | Ep 32/60 | steps=2000 | total_reward=-140.903523 | final_balance=170.38 | avg_loss=0.001410 | epsilon=0.5947
+2025-12-15 13:04:26,391 | INFO | Ep 33/60 | steps=2000 | total_reward=-124.625563 | final_balance=111.42 | avg_loss=0.001423 | epsilon=0.5820
+2025-12-15 13:04:34,234 | INFO | Ep 34/60 | steps=2000 | total_reward=-155.009901 | final_balance=57.42 | avg_loss=0.001370 | epsilon=0.5693
+2025-12-15 13:04:41,410 | INFO | Ep 35/60 | steps=2000 | total_reward=-132.158194 | final_balance=70.80 | avg_loss=0.001526 | epsilon=0.5567
+2025-12-15 13:04:50,815 | INFO | Ep 36/60 | steps=2000 | total_reward=-107.054706 | final_balance=321.07 | avg_loss=0.001409 | epsilon=0.5440
+2025-12-15 13:04:57,912 | INFO | Ep 37/60 | steps=2000 | total_reward=-111.729053 | final_balance=242.45 | avg_loss=0.001555 | epsilon=0.5313
+2025-12-15 13:05:05,570 | INFO | Ep 38/60 | steps=2000 | total_reward=-116.690194 | final_balance=214.67 | avg_loss=0.001726 | epsilon=0.5187
+2025-12-15 13:05:13,056 | INFO | Ep 39/60 | steps=2000 | total_reward=-51.265663 | final_balance=757.28 | avg_loss=0.001674 | epsilon=0.5060
+2025-12-15 13:05:13,070 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\best_ep39.pt
+2025-12-15 13:05:20,080 | INFO | Ep 40/60 | steps=2000 | total_reward=-119.047584 | final_balance=283.62 | avg_loss=0.001617 | epsilon=0.4933
+2025-12-15 13:05:27,084 | INFO | Ep 41/60 | steps=2000 | total_reward=-95.557426 | final_balance=252.81 | avg_loss=0.001687 | epsilon=0.4807
+2025-12-15 13:05:34,145 | INFO | Ep 42/60 | steps=2000 | total_reward=-132.694736 | final_balance=104.90 | avg_loss=0.001800 | epsilon=0.4680
+2025-12-15 13:05:41,384 | INFO | Ep 43/60 | steps=2000 | total_reward=-82.554004 | final_balance=398.88 | avg_loss=0.001864 | epsilon=0.4553
+2025-12-15 13:05:48,609 | INFO | Ep 44/60 | steps=2000 | total_reward=-79.920125 | final_balance=351.36 | avg_loss=0.001721 | epsilon=0.4427
+2025-12-15 13:05:55,817 | INFO | Ep 45/60 | steps=2000 | total_reward=-92.725318 | final_balance=510.60 | avg_loss=0.001838 | epsilon=0.4300
+2025-12-15 13:06:03,015 | INFO | Ep 46/60 | steps=2000 | total_reward=-138.925714 | final_balance=83.26 | avg_loss=0.001925 | epsilon=0.4173
+2025-12-15 13:06:10,183 | INFO | Ep 47/60 | steps=2000 | total_reward=-58.303767 | final_balance=690.02 | avg_loss=0.001843 | epsilon=0.4047
+2025-12-15 13:06:17,470 | INFO | Ep 48/60 | steps=2000 | total_reward=-123.507604 | final_balance=152.72 | avg_loss=0.002063 | epsilon=0.3920
+2025-12-15 13:06:24,702 | INFO | Ep 49/60 | steps=2000 | total_reward=-120.602817 | final_balance=279.12 | avg_loss=0.001974 | epsilon=0.3793
+2025-12-15 13:06:31,980 | INFO | Ep 50/60 | steps=2000 | total_reward=-54.455480 | final_balance=511.27 | avg_loss=0.001941 | epsilon=0.3667
+2025-12-15 13:06:39,291 | INFO | Ep 51/60 | steps=2000 | total_reward=-102.209812 | final_balance=582.02 | avg_loss=0.002042 | epsilon=0.3540
+2025-12-15 13:06:46,699 | INFO | Ep 52/60 | steps=2000 | total_reward=-121.492133 | final_balance=355.29 | avg_loss=0.002199 | epsilon=0.3413
+2025-12-15 13:06:53,883 | INFO | Ep 53/60 | steps=2000 | total_reward=-106.685372 | final_balance=218.19 | avg_loss=0.002064 | epsilon=0.3287
+2025-12-15 13:07:01,145 | INFO | Ep 54/60 | steps=2000 | total_reward=-71.032333 | final_balance=633.41 | avg_loss=0.002309 | epsilon=0.3160
+2025-12-15 13:07:08,586 | INFO | Ep 55/60 | steps=2000 | total_reward=-94.461815 | final_balance=371.46 | avg_loss=0.002198 | epsilon=0.3033
+2025-12-15 13:07:16,682 | INFO | Ep 56/60 | steps=2000 | total_reward=-29.928694 | final_balance=4687.74 | avg_loss=0.002348 | epsilon=0.2907
+2025-12-15 13:07:16,689 | INFO | Saved best checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\best_ep56.pt
+2025-12-15 13:07:24,664 | INFO | Ep 57/60 | steps=2000 | total_reward=-111.471010 | final_balance=178.44 | avg_loss=0.002196 | epsilon=0.2780
+2025-12-15 13:07:32,251 | INFO | Ep 58/60 | steps=2000 | total_reward=-98.414066 | final_balance=372.67 | avg_loss=0.002328 | epsilon=0.2653
+2025-12-15 13:07:39,793 | INFO | Ep 59/60 | steps=2000 | total_reward=-73.899677 | final_balance=665.99 | avg_loss=0.002407 | epsilon=0.2527
+2025-12-15 13:07:47,151 | INFO | Ep 60/60 | steps=2000 | total_reward=-136.474765 | final_balance=164.13 | avg_loss=0.002650 | epsilon=0.2400
+2025-12-15 13:07:47,161 | INFO | Done. Final model: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\dqn\final.pt

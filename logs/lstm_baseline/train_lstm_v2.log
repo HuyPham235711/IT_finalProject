@@ -1,0 +1,32 @@
+2025-12-11 11:47:44,673 [INFO] Logger initialized. Writing to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\logs\train_lstm_v2.log
+2025-12-11 11:47:44,674 [INFO] === Training LSTM Baseline v2 ===
+2025-12-11 11:47:56,743 [INFO] Epoch 1 - Train: 0.046857, Val: 0.428134
+2025-12-11 11:48:00,466 [INFO] Epoch 2 - Train: 0.045730, Val: 0.442218
+2025-12-11 11:48:04,414 [INFO] Epoch 3 - Train: 0.045563, Val: 0.471284
+2025-12-11 11:48:08,278 [INFO] Epoch 4 - Train: 0.045524, Val: 0.482110
+2025-12-11 11:48:11,960 [INFO] Epoch 5 - Train: 0.045533, Val: 0.479130
+2025-12-11 11:48:11,960 [INFO] [DONE] Saved model to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm\v2\lstm_baseline.pt
+2025-12-11 11:59:55,508 [INFO] Logger initialized. Writing to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\logs\train_lstm_v2.log
+2025-12-11 11:59:55,509 [INFO] === Training LSTM Baseline v2 (predict CLOSE t+1) ===
+2025-12-11 12:00:44,036 [INFO] Logger initialized. Writing to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\logs\train_lstm_v2.log
+2025-12-11 12:00:44,037 [INFO] === Training LSTM Baseline v2 (predict CLOSE t+1) ===
+2025-12-11 12:00:50,152 [INFO] Epoch 1/30 - Train Loss: 0.046637, Val Loss: 0.480823
+2025-12-11 12:00:53,499 [INFO] Epoch 2/30 - Train Loss: 0.045583, Val Loss: 0.456081
+2025-12-11 12:00:56,851 [INFO] Epoch 3/30 - Train Loss: 0.045483, Val Loss: 0.475107
+2025-12-11 12:01:00,278 [INFO] Epoch 4/30 - Train Loss: 0.045494, Val Loss: 0.477282
+2025-12-11 12:01:03,893 [INFO] Epoch 5/30 - Train Loss: 0.045453, Val Loss: 0.470484
+2025-12-11 12:01:07,876 [INFO] Epoch 6/30 - Train Loss: 0.045430, Val Loss: 0.498355
+2025-12-11 12:01:11,749 [INFO] Epoch 7/30 - Train Loss: 0.045402, Val Loss: 0.481873
+2025-12-11 12:01:15,793 [INFO] Epoch 8/30 - Train Loss: 0.045385, Val Loss: 0.489247
+2025-12-11 12:01:19,715 [INFO] Epoch 9/30 - Train Loss: 0.045391, Val Loss: 0.491215
+2025-12-11 12:01:23,280 [INFO] Epoch 10/30 - Train Loss: 0.045409, Val Loss: 0.469792
+2025-12-11 12:01:27,182 [INFO] Epoch 11/30 - Train Loss: 0.045360, Val Loss: 0.473153
+2025-12-11 12:01:30,777 [INFO] Epoch 12/30 - Train Loss: 0.045431, Val Loss: 0.477739
+2025-12-11 12:01:34,332 [INFO] Epoch 13/30 - Train Loss: 0.045396, Val Loss: 0.467078
+2025-12-11 12:01:37,840 [INFO] Epoch 14/30 - Train Loss: 0.045361, Val Loss: 0.482559
+2025-12-11 12:01:41,270 [INFO] Epoch 15/30 - Train Loss: 0.045365, Val Loss: 0.490555
+2025-12-11 12:01:44,684 [INFO] Epoch 16/30 - Train Loss: 0.045362, Val Loss: 0.473675
+2025-12-11 12:01:48,110 [INFO] Epoch 17/30 - Train Loss: 0.045352, Val Loss: 0.481592
+2025-12-11 12:01:48,110 [INFO] Early stopping triggered.
+2025-12-11 12:01:48,110 [INFO] [DONE] Best Val Loss: 0.456081, model saved to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm\v2\lstm_baseline.pt
+2025-12-11 12:01:48,187 [INFO] [DONE] Valid metrics: {'MSE': 0.47156092524528503, 'MAE': 0.682329535484314} -> E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm\v2\lstm_baseline_valid_metrics.json

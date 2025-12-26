@@ -1,67 +1,70 @@
 # src/rl_agent/train_ppo.py
 import os
+import json
 from pathlib import Path
-
+import numpy as np
 import pandas as pd
 from sqlalchemy import create_engine
 
 from stable_baselines3 import PPO
-from stable_baselines3.common.env_util import DummyVecEnv
+from stable_baselines3.common.vec_env import DummyVecEnv, VecNormalize
 
-from src.rl_env.trading_env import TradingEnvPPOHybrid  # env reward đơn giản của bạn
-
-# PG_CONN_STR dùng như DQN
-os.environ["PG_CONN_STR"] = "postgresql+psycopg2://postgres:123456789@localhost:5432/postgres"
-
+from src.rl_agent.rl_env.ppo_trading_env import TradingEnvPPOHybrid
 
 PROJECT_ROOT = Path("E:/TDTu/TAI_LIEU/KY1-NAM5/DU_AN_CNTT")
-FUSION_TRAIN_PATH = PROJECT_ROOT / "results" / "fusion_rl" / "train_inference" / "fusion_embeddings.npy"
-
 SCHEMA = "it_final"
 TABLE_TRAIN = "processed_ohlcv_train"
+FUSION_PATH = PROJECT_ROOT / "results/fusion_rl/v2/fusion_embeddings_train_v2.npy"
+
+OUT_DIR = PROJECT_ROOT / "results/rl_agent/ppo/v3"
+OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def load_ohlcv_train():
+def load_prices():
     engine = create_engine(os.environ["PG_CONN_STR"])
-    q = f'SELECT "datetime", "close" FROM "{SCHEMA}"."{TABLE_TRAIN}" ORDER BY "datetime"'
-    df = pd.read_sql(q, engine)
-    return df
-
-
-def make_env():
-    df = load_ohlcv_train()
-    env = TradingEnvPPOHybrid(
-        fusion_emb_path=str(FUSION_TRAIN_PATH),
-        ohlcv_df=df,
-        initial_balance=1000.0,
+    df = pd.read_sql(
+        f'SELECT close FROM "{SCHEMA}"."{TABLE_TRAIN}" ORDER BY datetime',
+        engine,
     )
-    return env
+    return df["close"].to_numpy()
 
 
 def main():
-    log_dir = PROJECT_ROOT / "results" / "rl_agent" / "ppo"
-    log_dir.mkdir(parents=True, exist_ok=True)
+    prices = load_prices()
+    embeddings = np.load(FUSION_PATH)
 
-    # VecEnv (bắt buộc với stable-baselines3, 1 env vẫn dùng DummyVecEnv)
-    vec_env = DummyVecEnv([make_env])
+    n = min(len(prices), len(embeddings))
+    prices, embeddings = prices[:n], embeddings[:n]
+
+    def make_env():
+        return TradingEnvPPOHybrid(
+            prices=prices,
+            embeddings=embeddings,
+            episode_length=2048,
+        )
+
+    env = VecNormalize(DummyVecEnv([make_env]), norm_obs=True, norm_reward=True)
 
     model = PPO(
         "MlpPolicy",
-        vec_env,
-        verbose=1,
-        learning_rate=3e-4,
-        gamma=0.99,
+        env,
+        learning_rate=1e-4,
         n_steps=2048,
         batch_size=256,
-        tensorboard_log=str(log_dir / "tb"),
+        n_epochs=10,
+        gamma=0.99,
+        gae_lambda=0.95,
+        ent_coef=0.02,
+        device="cpu",
+        verbose=1,
     )
 
-    total_steps = 1_000_000  # bạn có thể chỉnh
-    model.learn(total_timesteps=total_steps)
+    model.learn(total_timesteps=500_000)
 
-    model_path = log_dir / "ppo_trading.zip"
-    model.save(model_path)
-    print(f"✅ Saved PPO model → {model_path}")
+    model.save(OUT_DIR / "ppo_trading.zip")
+    env.save(OUT_DIR / "vecnormalize.pkl")
+
+    print(" PPO TRAIN DONE")
 
 
 if __name__ == "__main__":

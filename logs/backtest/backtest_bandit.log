@@ -1,0 +1,35 @@
+(venv) PS E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT> python -m src.backtest.rl_agent.run_backtest_bandit_linucb
+[ACCOUNT] initial_balance=$1,000.00
+[COST] switch_cost=0.0002 hold_cost=0.0
+[CKPT] d=260 | obs will be padded/truncated inside agent
+[BEST] alpha=0.22 gamma=0.999 cooldown=10 min_adv=0.002 eps_abs=0.0003 eps_pct=0.0 flat_adv=0.0 reset_prior=1 use_trend=0 sma=(30,120) forbid_to_flat=1 zero_to_flat=1 flip_to_flat=1
+
+[RUN] bt1 | price_table=ohlcv_backtest_part1 | emb=fusion_embeddings_backtest_v2_part1.npy
+[ALIGN] dropped first 60 rows to match embeddings.
+
+=== BANDIT FUSION bt1 (BACKTEST BEST) ===
+{'final_equity': 1.156481444045377, 'final_balance': 1156.481444045377, 'roi': 0.156481444045377, 'sharpe': 3.641190199807927, 'max_drawdown': 0.08519306512213123, 'turnover_rate': 0.07830551989730423}
+[RESULT] final_balance=$1,156.48 | ROI=15.65%
+[DEBUG] trade_count=61 / 779 steps | actions(FLAT/LONG/SHORT)=(140/362/277)
+
+[RUN] bt2 | price_table=ohlcv_backtest_part2 | emb=fusion_embeddings_backtest_v2_part2.npy
+[ALIGN] dropped first 60 rows to match embeddings.
+
+=== BANDIT FUSION bt2 (BACKTEST BEST) ===
+{'final_equity': 1.023761677418804, 'final_balance': 1023.7616774188041, 'roi': 0.023761677418804084, 'sharpe': 2.7709617994881395, 'max_drawdown': 0.07101656607789077, 'turnover_rate': 0.08387096774193549}
+[RESULT] final_balance=$1,023.76 | ROI=2.38%
+[DEBUG] trade_count=13 / 155 steps | actions(FLAT/LONG/SHORT)=(36/22/97)
+
+[RUN] bt3 | price_table=ohlcv_backtest_part3 | emb=fusion_embeddings_backtest_v2_part3.npy
+[ALIGN] dropped first 60 rows to match embeddings.
+
+=== BANDIT FUSION bt3 (BACKTEST BEST) ===
+{'final_equity': 1.0327650637005863, 'final_balance': 1032.7650637005863, 'roi': 0.032765063700586294, 'sharpe': 3.598176462741385, 'max_drawdown': 0.02672951216265286, 'turnover_rate': 0.0773067331670823}
+[RESULT] final_balance=$1,032.77 | ROI=3.28%
+[DEBUG] trade_count=31 / 401 steps | actions(FLAT/LONG/SHORT)=(135/122/144)
+
+=== TOTAL (bt1 * bt2 * bt3) BEST (CONSTRAINED) ===
+[TOTAL] final_equity=1.222754 | final_balance=$1,222.75 | ROI=22.28%
+
+Saved to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\backtest\bandit_fusion
+(venv) PS E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT>

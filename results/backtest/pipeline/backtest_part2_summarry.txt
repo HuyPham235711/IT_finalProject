@@ -1,0 +1,12 @@
+========== TRADE SUMMARY ==========
+From: 03/04/2025
+To: 10/04/2025
+Initial Balance : $1,000.00
+Final Balance   : $1,639.00
+Total PnL       : $639.00
+ROI             : 63.90%
+-----------------------------------
+LONG  count     : 1
+SHORT count     : 4
+FLAT  count     : 153
+===================================

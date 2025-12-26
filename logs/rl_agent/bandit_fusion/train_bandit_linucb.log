@@ -1,0 +1,23 @@
+2025-12-20 19:18:52,013 | INFO | === TRAIN BANDIT LinDiagUCB (PA1 ctx: fusion + tech features) ===
+2025-12-20 19:18:52,013 | INFO | price_table=it_final.ohlcv_train
+2025-12-20 19:18:52,013 | INFO | emb_path=E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\fusion_rl\v2\fusion_embeddings_train_v2.npy
+2025-12-20 19:18:52,786 | INFO | [ALIGN] Dropped first 60 price rows to match embeddings length T=62821.
+2025-12-20 19:18:52,786 | INFO | cfg=LinUCBConfig(alpha=0.6, ridge=1.0, tau=0.0, cooldown=2, warmup_steps=600, epsilon=0.02, tie_eps=1e-12, min_adv=0.0, gamma=0.9995, seed=42)
+2025-12-20 19:18:52,787 | INFO | costs=BanditCostConfig(switch_cost=0.0006, hold_cost=0.0)
+2025-12-20 19:18:52,787 | INFO | aligned_rows=62821 | emb_shape=(62821, 256)
+2025-12-20 19:18:52,879 | INFO | Env ready | T=62821 | context_dim=260 (fusion_dim=256 + 4 extras)
+2025-12-20 19:18:53,026 | INFO | TRAIN step=5000 | equity=0.5474 | sharpe=-1.461 | mdd=0.713 | turnover=0.155 | avg_reward=-0.00012051 | action_counts={0: np.int64(232), 1: np.int64(3425), 2: np.int64(1343)} | pos_counts={-1: np.int64(1343), 0: np.int64(232), 1: np.int64(3425)}
+2025-12-20 19:18:53,169 | INFO | TRAIN step=10000 | equity=0.5750 | sharpe=-0.983 | mdd=0.751 | turnover=0.091 | avg_reward=-0.00005534 | action_counts={0: np.int64(264), 1: np.int64(3674), 2: np.int64(6062)} | pos_counts={-1: np.int64(6062), 0: np.int64(264), 1: np.int64(3674)}
+2025-12-20 19:18:53,315 | INFO | TRAIN step=15000 | equity=0.7957 | sharpe=-0.600 | mdd=0.751 | turnover=0.074 | avg_reward=-0.00001523 | action_counts={0: np.int64(295), 1: np.int64(5662), 2: np.int64(9043)} | pos_counts={-1: np.int64(9043), 0: np.int64(295), 1: np.int64(5662)}
+2025-12-20 19:18:53,490 | INFO | TRAIN step=20000 | equity=0.9445 | sharpe=-0.464 | mdd=0.751 | turnover=0.065 | avg_reward=-0.00000285 | action_counts={0: np.int64(335), 1: np.int64(7825), 2: np.int64(11840)} | pos_counts={-1: np.int64(11840), 0: np.int64(335), 1: np.int64(7825)}
+2025-12-20 19:18:53,651 | INFO | TRAIN step=25000 | equity=0.3701 | sharpe=-0.834 | mdd=0.798 | turnover=0.059 | avg_reward=-0.00003976 | action_counts={0: np.int64(368), 1: np.int64(8827), 2: np.int64(15805)} | pos_counts={-1: np.int64(15805), 0: np.int64(368), 1: np.int64(8827)}
+2025-12-20 19:18:53,816 | INFO | TRAIN step=30000 | equity=0.4215 | sharpe=-0.722 | mdd=0.887 | turnover=0.058 | avg_reward=-0.00002880 | action_counts={0: np.int64(403), 1: np.int64(11291), 2: np.int64(18306)} | pos_counts={-1: np.int64(18306), 0: np.int64(403), 1: np.int64(11291)}
+2025-12-20 19:18:53,987 | INFO | TRAIN step=35000 | equity=0.3302 | sharpe=-0.752 | mdd=0.887 | turnover=0.061 | avg_reward=-0.00003166 | action_counts={0: np.int64(445), 1: np.int64(14706), 2: np.int64(19849)} | pos_counts={-1: np.int64(19849), 0: np.int64(445), 1: np.int64(14706)}
+2025-12-20 19:18:54,130 | INFO | TRAIN step=40000 | equity=0.1447 | sharpe=-0.924 | mdd=0.922 | turnover=0.065 | avg_reward=-0.00004833 | action_counts={0: np.int64(474), 1: np.int64(17460), 2: np.int64(22066)} | pos_counts={-1: np.int64(22066), 0: np.int64(474), 1: np.int64(17460)}
+2025-12-20 19:18:54,305 | INFO | TRAIN step=45000 | equity=0.2364 | sharpe=-0.752 | mdd=0.937 | turnover=0.065 | avg_reward=-0.00003205 | action_counts={0: np.int64(505), 1: np.int64(17993), 2: np.int64(26502)} | pos_counts={-1: np.int64(26502), 0: np.int64(505), 1: np.int64(17993)}
+2025-12-20 19:18:54,463 | INFO | TRAIN step=50000 | equity=0.1188 | sharpe=-0.867 | mdd=0.943 | turnover=0.063 | avg_reward=-0.00004261 | action_counts={0: np.int64(544), 1: np.int64(18454), 2: np.int64(31002)} | pos_counts={-1: np.int64(31002), 0: np.int64(544), 1: np.int64(18454)}
+2025-12-20 19:18:54,623 | INFO | TRAIN step=55000 | equity=0.0732 | sharpe=-0.927 | mdd=0.963 | turnover=0.060 | avg_reward=-0.00004754 | action_counts={0: np.int64(589), 1: np.int64(18484), 2: np.int64(35927)} | pos_counts={-1: np.int64(35927), 0: np.int64(589), 1: np.int64(18484)}
+2025-12-20 19:18:54,797 | INFO | TRAIN step=60000 | equity=0.0215 | sharpe=-1.124 | mdd=0.990 | turnover=0.060 | avg_reward=-0.00006400 | action_counts={0: np.int64(625), 1: np.int64(21667), 2: np.int64(37708)} | pos_counts={-1: np.int64(37708), 0: np.int64(625), 1: np.int64(21667)}
+2025-12-20 19:18:54,906 | INFO | TRAIN step=62819 | equity=0.0310 | sharpe=-1.025 | mdd=0.991 | turnover=0.059 | avg_reward=-0.00005531 | action_counts={0: np.int64(649), 1: np.int64(24446), 2: np.int64(37724)} | pos_counts={-1: np.int64(37724), 0: np.int64(649), 1: np.int64(24446)}
+2025-12-20 19:18:54,921 | INFO | Saved checkpoint: E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\rl_agent\bandit_fusion\linucb_fusion_train.npz
+2025-12-20 19:18:54,921 | INFO | === DONE ===

@@ -1,0 +1,16 @@
+2025-12-10 22:56:23,861 [INFO] Logger initialized. Writing to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\logs\train_att_cnn_lstm_v2.log
+2025-12-10 22:56:23,861 [INFO] === Training ATT-CNN-LSTM v2 (predict CLOSE t+1) ===
+2025-12-10 22:56:25,081 [INFO] Train shape=(62881, 8), Valid shape=(2119, 8)
+2025-12-10 22:56:25,182 [INFO] Created 62821 train sequences, 2059 valid sequences
+2025-12-10 22:57:25,934 [INFO] Epoch 1/10 - Train Loss: 0.046436, Val Loss: 0.513552
+2025-12-10 22:58:24,574 [INFO] Epoch 2/10 - Train Loss: 0.045879, Val Loss: 0.547670
+2025-12-10 22:59:22,167 [INFO] Epoch 3/10 - Train Loss: 0.045755, Val Loss: 0.543506
+2025-12-10 23:00:23,251 [INFO] Epoch 4/10 - Train Loss: 0.045700, Val Loss: 0.522935
+2025-12-10 23:01:22,298 [INFO] Epoch 5/10 - Train Loss: 0.045631, Val Loss: 0.486732
+2025-12-10 23:02:26,348 [INFO] Epoch 6/10 - Train Loss: 0.045612, Val Loss: 0.495490
+2025-12-10 23:03:24,507 [INFO] Epoch 7/10 - Train Loss: 0.045589, Val Loss: 0.484792
+2025-12-10 23:04:21,790 [INFO] Epoch 8/10 - Train Loss: 0.045533, Val Loss: 0.499069
+2025-12-10 23:05:19,672 [INFO] Epoch 9/10 - Train Loss: 0.045488, Val Loss: 0.518817
+2025-12-10 23:06:17,256 [INFO] Epoch 10/10 - Train Loss: 0.045462, Val Loss: 0.468461
+2025-12-10 23:06:17,696 [INFO] [DONE] Saved metrics: {'MSE': 0.4684610664844513, 'MAE': 0.6800515055656433} -> E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm_advanced\v2\att_cnn_lstm_metrics.json
+2025-12-10 23:06:18,009 [INFO] Saved embeddings to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm_advanced\v2\att_cnn_lstm_embeddings.npy, shape=(2059, 2304)

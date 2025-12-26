@@ -1,0 +1,12 @@
+========== TRADE SUMMARY ==========
+From: 28/11/2024
+To: 26/12/2024
+Initial Balance : $1,000.00
+Final Balance   : $-347.00
+Total PnL       : $-1,347.00
+ROI             : -134.70%
+-----------------------------------
+LONG  count     : 6
+SHORT count     : 2
+FLAT  count     : 677
+===================================

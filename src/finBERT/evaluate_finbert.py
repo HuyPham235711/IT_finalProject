@@ -1,11 +1,9 @@
-# src/models/finbert/evaluate_finbert_full.py
 """
-Chạy toàn bộ inference FinBERT:
-- Inference + đánh giá trên media_test (Postgres)
+inference FinBERT:
+- Inference + đánh giá trên media_test 
 - Tính metrics (accuracy, precision, recall, F1)
 - Vẽ confusion matrix & bar chart F1-score
 - Trích xuất score 3 lớp (pos/neg/neu) + logits embedding
-- Lưu CSV, JSON, TXT, PNG, NPY
 """
 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline

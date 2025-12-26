@@ -1,4 +1,3 @@
-# finbert_finetune_sampler_I_am_speed.py
 import os
 import platform
 from pathlib import Path

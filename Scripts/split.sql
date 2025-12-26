@@ -41,18 +41,18 @@ from it_final.media
 where datetime between '2025-04-11' and '2025-09-10';
 
 --backtest 17k
-create table it_final.media_backtest as
+create table it_final.media_backtest_part1 as
 	select *
 	from it_final.media
-	where datetime between '2024-11-26' and '2024-12-31'
+	where datetime between '2024-11-26' and '2024-12-31';
 	
-	union all
+create table it_final.media_backtest_part2 as
 	
 	select *
 	from it_final.media
-	where datetime between '2025-04-01' and '2025-04-10'
+	where datetime between '2025-04-01' and '2025-04-10';
 	
-	union all
+create table it_final.media_backtest_part3 as
 	
 	select *
 	from it_final.media
@@ -89,19 +89,19 @@ from it_final.raw_btcusd_1hr
 where time_stamp between '2025-04-11' and '2025-09-10';
 
 --backtest
-create table it_final.ohlcv_backtest as
+create table it_final.ohlcv_backtest_part1 as
 	select *
 	from it_final.raw_btcusd_1hr
-	where time_stamp between '2024-11-26' and '2024-12-31'
+	where time_stamp between '2024-11-26' and '2024-12-31';
 	
-	union all
+create table it_final.ohlcv_backtest_part2 as
 	
 	select *
 	from it_final.raw_btcusd_1hr
-	where time_stamp between '2025-04-01' and '2025-04-10'
+	where time_stamp between '2025-04-01' and '2025-04-10';
 	
-	union all
-	
+create table it_final.ohlcv_backtest_part3 as
+
 	select *
 	from it_final.raw_btcusd_1hr
 	where time_stamp between '2025-09-11' and '2025-10-02';
@@ -144,6 +144,19 @@ create table it_final.processed_ohlcv_valid
 );
 
 create table it_final.processed_ohlcv_backtest
+(
+	datetime timestamp,
+	open numeric,
+	high numeric,
+	low numeric,
+	close numeric,
+	volume numeric,
+	sma14 numeric,
+	rsi14 numeric
+);
+
+
+create table it_final.processed_ohlcv_backtest_part3
 (
 	datetime timestamp,
 	open numeric,

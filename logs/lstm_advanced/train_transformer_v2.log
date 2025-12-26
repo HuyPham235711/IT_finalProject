@@ -1,0 +1,26 @@
+2025-12-10 23:10:14,559 [INFO] Logger initialized. Writing to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\logs\train_transformer_v2.log
+2025-12-10 23:10:14,560 [INFO] === Training Transformer Encoder v2 (predict CLOSE t+1) ===
+2025-12-10 23:10:15,966 [INFO] Train shape=(62881, 8), Valid shape=(2119, 8)
+2025-12-10 23:10:16,144 [INFO] Created 62821 train seq, 2059 valid seq
+2025-12-10 23:11:48,840 [INFO] Epoch 1/20 - Train Loss: 0.053191 | Val Loss: 0.044261
+2025-12-10 23:13:18,770 [INFO] Epoch 2/20 - Train Loss: 0.012324 | Val Loss: 0.093279
+2025-12-10 23:14:48,858 [INFO] Epoch 3/20 - Train Loss: 0.007100 | Val Loss: 0.095672
+2025-12-10 23:16:19,605 [INFO] Epoch 4/20 - Train Loss: 0.005132 | Val Loss: 0.086461
+2025-12-10 23:17:50,410 [INFO] Epoch 5/20 - Train Loss: 0.004436 | Val Loss: 0.083810
+2025-12-10 23:19:22,215 [INFO] Epoch 6/20 - Train Loss: 0.004153 | Val Loss: 0.032829
+2025-12-10 23:20:53,534 [INFO] Epoch 7/20 - Train Loss: 0.003759 | Val Loss: 0.038890
+2025-12-10 23:22:23,979 [INFO] Epoch 8/20 - Train Loss: 0.003407 | Val Loss: 0.062096
+2025-12-10 23:23:54,269 [INFO] Epoch 9/20 - Train Loss: 0.003134 | Val Loss: 0.053587
+2025-12-10 23:25:24,322 [INFO] Epoch 10/20 - Train Loss: 0.003001 | Val Loss: 0.059890
+2025-12-10 23:26:55,297 [INFO] Epoch 11/20 - Train Loss: 0.002961 | Val Loss: 0.076883
+2025-12-10 23:28:25,698 [INFO] Epoch 12/20 - Train Loss: 0.002912 | Val Loss: 0.084989
+2025-12-10 23:29:56,041 [INFO] Epoch 13/20 - Train Loss: 0.002886 | Val Loss: 0.010901
+2025-12-10 23:31:27,353 [INFO] Epoch 14/20 - Train Loss: 0.002820 | Val Loss: 0.045337
+2025-12-10 23:32:57,663 [INFO] Epoch 15/20 - Train Loss: 0.002655 | Val Loss: 0.006245
+2025-12-10 23:34:31,117 [INFO] Epoch 16/20 - Train Loss: 0.002689 | Val Loss: 0.009567
+2025-12-10 23:36:01,631 [INFO] Epoch 17/20 - Train Loss: 0.002439 | Val Loss: 0.007906
+2025-12-10 23:37:31,483 [INFO] Epoch 18/20 - Train Loss: 0.002482 | Val Loss: 0.013709
+2025-12-10 23:39:00,869 [INFO] Epoch 19/20 - Train Loss: 0.002453 | Val Loss: 0.009734
+2025-12-10 23:40:30,227 [INFO] Epoch 20/20 - Train Loss: 0.002527 | Val Loss: 0.008432
+2025-12-10 23:40:31,118 [INFO] Saved embeddings to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm_advanced\v2\transformer_embeddings.npy, shape=(2059, 1536)
+2025-12-10 23:40:31,118 [INFO] [DONE] Saved model & metrics to E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm_advanced\v2\transformer_baseline.pt, E:\TDTu\TAI_LIEU\KY1-NAM5\DU_AN_CNTT\results\lstm_advanced\v2\transformer_metrics.json. Metrics: {'MSE': 0.006245408672839403, 'MAE': 0.05988537520170212}
