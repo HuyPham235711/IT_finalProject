@@ -1,0 +1,3 @@
+https://www.kaggle.com/datasets/siddhant1312/cryptonewsdataset
+https://github.com/soheilrahsaz/cryptoNewsDataset/tree/main
+https://github.com/Webhose/financial-news-dataset/tree/master/Datasets
